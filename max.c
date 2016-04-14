@@ -6,8 +6,12 @@ int main(void) {
   int max;
   int n1, n2, n3, n4, n5;
   
-  printf("数字を入力してください");
-  scanf("%d%d%d%d%d", &n1, &n2, &n3, &n4, &n5);
+  printf("数字を入力してください\n");
+  scanf("%d", &n1);
+  scanf("%d", &n2);
+  scanf("%d", &n3);
+  scanf("%d", &n4);
+  scanf("", &n5);
   
   max = n1;
   if ( max < n2 ) {
