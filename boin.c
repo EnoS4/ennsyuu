@@ -1,5 +1,6 @@
 /*入力された英字の中から母音を出力するプログラムを作成せよ*/
-#include<stdio.h>
+/*動かない*/
+/*#include<stdio.h>
 #include<string.h>
 
 #define max 256
@@ -31,3 +32,4 @@ int main(void) {
   }
   return 0;
 }
+*/
