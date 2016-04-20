@@ -6,16 +6,16 @@
 
 int main(void)
 {
-  char str[max];
+  char imp[max];
   int i,j;
   char cmp[] = "aiueoAIUEO";
 
-  fgets(str,max,stdin);
+  fgets(imp,max,stdin);
 
   for (i = 0; i < strlen(str); i++)
   for (j = 0; j < strlen(cmp); j++)
-  if(str[i] == cmp[j]){
-  putchar(str[i]);
+  if(imp[i] == cmp[j]){
+  putchar(imp[i]);
   break;
   }
 return 0;
