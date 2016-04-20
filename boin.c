@@ -7,25 +7,25 @@
 
 int main(void) {
   int cnt;
+  cnt = 0;
+  char a = 'a';
+  char i = 'i';
+  char u = 'u';
+  char e = 'e';
+  char o = 'o';
   char imp[max];
-  printf("英字を入力してください\n", imp[cnt]);
-    scanf("%s\n", imp[cnt]);//
+  printf("英字を入力してください\n");
+    scanf("%c\n", imp[cnt]);
   for (cnt = 0; cnt < strlen(imp); cnt++) {
     switch (imp[cnt]){
-      case'a':
-      printf("%s\n",imp[cnt]);
+      case 'a':
+      case 'i':
+      case 'u':
+      case 'e':
+      case 'o':
+      printf("%c\n",imp[cnt]);
       break;
-      case'i':
-      printf("%s\n",imp[cnt]);
-      break;
-      case'u':
-      printf("%s\n",imp[cnt]);
-      break;
-      case'e':
-      printf("%s\n",imp[cnt]);
-      break;
-      case'o':
-      printf("%s\n",imp[cnt]);
+      default:
       break;
     }
     printf("\n");
