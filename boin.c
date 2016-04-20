@@ -1,17 +1,33 @@
-/*入力された５つの数字の中の最大値を出力するプログラムを作成せよ*/
+/*入力された英字の中から母音を出力するプログラムを作成せよ*/
 #include<stdio.h>
 #include<string.h>
 
+#define max 256
+
 int main(void) {
-  int cnt, boin;
-  char /*入力された５つの数字の中の最大値を出力するプログラムを作成せよ*/
-
-  for (cnt = 0; cnt < 5; cnt++) {
-    printf("数字を入力してください\n", cnt + 1);
-    scanf("%d %d %d %d %d", &number[0], &number[2], &number[3], &number[4], &number[5]);// 
+  int cnt;
+  char imp[max];
+  printf("英字を入力してください\n", imp[cnt]);
+    scanf("%s\n", imp[cnt]);//
+  for (cnt = 0; cnt < strlen(imp); cnt++) {
+    switch (imp[cnt]){
+      case'a':
+      printf("%s\n",imp[cnt]);
+      break;
+      case'i':
+      printf("%s\n",imp[cnt]);
+      break;
+      case'u':
+      printf("%s\n",imp[cnt]);
+      break;
+      case'e':
+      printf("%s\n",imp[cnt]);
+      break;
+      case'o':
+      printf("%s\n",imp[cnt]);
+      break;
+    }
+    printf("\n");
   }
-
-
   return 0;
-  
 }
