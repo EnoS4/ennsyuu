@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 
-#define max 6
+#define max 5
 
 typedef struct EMPLOYEE {
 	char name[16];
@@ -10,20 +10,22 @@ typedef struct EMPLOYEE {
 
 int main(void)
 {
-	EMPLOYEE empArray[3];
+	EMPLOYEE empArray[5];
 	int i,j;
 	int arraySize;
 
-	strcpy(empArray[0].name, "池田 利栄");
-	strcpy(empArray[1].name, "田中 賢吾");
-	strcpy(empArray[2].name, "中野 秀樹");
-	arraySize = 3;
+	strcpy(empArray[0].name, "大野 智");
+	strcpy(empArray[1].name, "櫻井 翔");
+	strcpy(empArray[2].name, "相葉 雅紀");
+	strcpy(empArray[3].name, "二宮 和也");
+	strcpy(empArray[4].name, "松本 潤");
+	arraySize = 5;
 
 	for (i = 0; i < max; i++) {
 		for (j = 0; j < arraySize; j++) {
 			printf("%sさん \n", empArray[j].name);
 			if ( j > arraySize ) {
-				j = j /4 ;
+				j = j / (arraySize + 1);
 			}
 		}
 	}
