@@ -1,8 +1,8 @@
-
+/*環状リスト(配列)*/
 #include<stdio.h>
 #include<string.h>
 
-#define max 5
+#define max 6
 
 typedef struct EMPLOYEE {
 	char name[16];
@@ -19,15 +19,12 @@ int main(void)
 	strcpy(empArray[2].name, "中野 秀樹");
 	arraySize = 3;
 
-	for (j = 0; j < max; j++) {
-		for (i = 0; i < arraySize; i++) {
-			printf("%sさん \n", empArray[i].name);
-		}
-		if ( i > arraySize ) {
-			i = 0;
-		}
-		for (i = 0; i < arraySize; i++) {
-			printf("%sさん \n", empArray[i].name);
+	for (i = 0; i < max; i++) {
+		for (j = 0; j < arraySize; j++) {
+			printf("%sさん \n", empArray[j].name);
+			if ( j > arraySize ) {
+				j = j /4 ;
+			}
 		}
 	}
 	return 0;
